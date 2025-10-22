@@ -1,8 +1,8 @@
 export enum ProductSize {
-  SMALL = "SMALL",
-  NORMAL = "NORMAL",
-  LARGE = "LARGE",
-  SET = "SET",
+  JUNIOR = "JUNIOR",
+  HALAL = "HALAL",
+  PREMIUM = "PREMIUM",
+  ORIGINAL = "ORIGINAL",
 }
 
 export enum ProductVolume {
@@ -20,9 +20,9 @@ export enum ProductStatus {
 }
 
 export enum ProductCollection {
-  DISH = "DISH",
-  SALAD = "SALAD",
+  BURGER = "BURGER",
+  FRIES = "FRIES",
   DESSERT = "DESSERT",
   DRINK = "DRINK",
-  OTHER = "OTHER",
+  SET = "SET",
 }

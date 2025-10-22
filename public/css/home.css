@@ -1,0 +1,16 @@
+/* ...existing code... */
+
+.sphere.color-change-5x path {
+  animation: color-change-5x 8s linear infinite alternate both;
+  will-change: fill;
+}
+
+@keyframes color-change-5x {
+  0%   { fill: #19dcea; }
+  25%  { fill: #b22cff; }
+  50%  { fill: #ea2222; }
+  75%  { fill: #f5be10; }
+  100% { fill: #3bd80d; }
+}
+
+/* ...existing code... */
