@@ -6,10 +6,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  animation: gradient 15s ease infinite;
-  -webkit-animation: gradient 15s ease infinite;
-  background-size: 200% 200%;
 }
 
 .login-container a {
@@ -116,28 +112,83 @@
   letter-spacing: -0.02em;
   color: #ffffff;
 }
+* {
+  margin: auto;
+  padding: auto;
+}
 
-/* Background animation */
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
+@media (min-width: 576px) and (max-width: 767px) {
+  .col-sm-4 {
+    max-width: 100%;
+    flex: auto;
   }
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
+@media (min-width: 320px) and (max-width: 375px) {
+  body {
+    background-size: cover;
   }
-  50% {
-    background-position: 100% 50%;
+}
+
+body,
+html {
+  background: linear-gradient(#58a341, #c3cfe2);
+  /* background-image: url("https://1.bp.blogspot.com/-fd1WXKk-TAc/XyqfngP4PiI/AAAAAAAAVMw/umQz3tkxtg43uPIy8W5og6gAkpCfjaTvACLcBGAsYHQ/w1563-h1563/bg-snell.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  height: 100vh;
+  text-rendering: optimizeLegibility; */
+}
+
+.dust-paarticle {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* svg stays fullscreen behind the form */
+.dust-paarticle > svg#dust-paarticle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* bring the form to front and constrain its width */
+form.login-container {
+  position: relative;
+  z-index: 1;
+  width: 360px; /* adjust as needed */
+  max-width: 90%;
+  margin: 0;
+  display: block;
+}
+
+/* ensure the inner frame keeps its layout */
+.login-frame {
+  margin: 50% auto 50px auto;
+  width: 100%;
+}
+
+/*************swing************/
+@keyframes swing {
+  0% {
+    transform: rotate(8deg);
   }
   100% {
-    background-position: 0% 50%;
+    transform: rotate(-8deg);
   }
+}
+
+.position-set {
+  position: absolute;
+  top: 5%;
 }

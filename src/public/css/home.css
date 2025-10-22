@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(rgb(87, 161, 107), rgb(120, 203, 142));
+  background: linear-gradient(#58a341, #c3cfe2);
 }
 .container {
   position: absolute;
