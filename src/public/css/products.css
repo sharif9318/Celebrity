@@ -6,7 +6,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(-45deg, #debababf, #8ed887, #81b578ba, #3bc258);
+  background: #001a00;
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 255, 0, 0.07) 1px,
+    transparent 1px
+  );
+  background-size: 40px 40px;
 }
 
 .products-container a {
