@@ -9,6 +9,7 @@ dotenv.config();
 
 import mongoose from "mongoose";
 import app from "./app";
+import server from "./app";
 
 //TCP-1 (Abbreviation for Transmission Control Protocol) . This TCP connection is for the MongoDB database. Which is used to store and retrieve data for the application.
 mongoose
@@ -16,7 +17,7 @@ mongoose
   .then((data) => {
     console.log("MongoDB connection successful");
     const PORT = process.env.PORT ?? 3003;
-    app.listen(PORT, function () {
+    server.listen(PORT, function () {
       console.info(`Server is running on port ${PORT}`);
       console.info(
         `Admin project is running at http://localhost:${PORT}/admin \n`
