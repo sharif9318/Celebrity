@@ -1,5 +1,5 @@
 {
-  "name": "Celebrity",
+  "name": "celebrity",
   "version": "1.0.0",
   "description": "This is Celebrity project backend application of Sharif Dilmuratov (Sheron) portfolio. The application is developed using Node.js, Express, and TypeScript. It provides a RESTful API for managing celebrity data, including CRUD operations and user authentication.",
   "main": "src/server.ts",
